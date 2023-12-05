@@ -14,7 +14,7 @@ app.use(bodyParser.json())
 app.use(authRoutes)
 app.use(trackRoutes)
 
-const mongoUri = 'mongodb+srv://admin:passwordpassword@cluster0.bscvupz.mongodb.net/?retryWrites=true&w=majority'
+const mongoUri = 'your-mongo-url'
 mongoose.connect(mongoUri)
 
 mongoose.connection.on('connected', () => {
